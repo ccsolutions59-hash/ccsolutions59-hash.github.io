@@ -1,164 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Forebet Clone | Weekend Football Predictions</title>
-  <!-- Google Fonts + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>C.C.SOLUTIONS | Professional IT Repair</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f4a261'%3E%3Cpath d='M4 6h16v10H4V6zm2 2v6h12V8H6zm14-4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- TOP UTILITY BAR (Language, Settings, etc.) -->
-  <div class="top-utility">
-    <div class="container">
-      <div class="utility-links">
-        <div class="dropdown-group">
-          <span class="util-item dropdown-trigger" data-dropdown="langDropdown"><i class="fas fa-globe"></i> Language <i class="fas fa-chevron-down"></i></span>
-          <div id="langDropdown" class="dropdown-menu">
-            <a href="#">English</a><a href="#">Español</a><a href="#">Français</a><a href="#">Deutsch</a>
-          </div>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">C.C.<span>SOLUTIONS</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offer">Offer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <div class="dropdown-group">
-          <span class="util-item dropdown-trigger" data-dropdown="settingsDropdown"><i class="fas fa-cog"></i> Settings <i class="fas fa-chevron-down"></i></span>
-          <div id="settingsDropdown" class="dropdown-menu">
-            <a href="#">Dark mode</a><a href="#">Notifications</a><a href="#">Odds format</a>
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="glow-text">💻 Laptop & PC Software Repair</h1>
+                <p>Fast • Reliable • Affordable • Remote Support Available</p>
+                <div class="offer-badge">
+                    <i class="fas fa-fire"></i> LIMITED OFFER: 5% OFF for first 5 clients! <i class="fas fa-fire"></i>
+                </div>
+                <a href="#contact" class="btn btn-primary">Get Free Quote →</a>
+            </div>
+            <!--<div class="hero-image">
+                <img src="https://via.placeholder.com/400x300?text=IT+Repair" alt="IT Repair">
+            </div>-->
         </div>
-        <div class="dropdown-group">
-          <span class="util-item dropdown-trigger" data-dropdown="tzDropdown"><i class="far fa-clock"></i> Time Zone <i class="fas fa-chevron-down"></i></span>
-          <div id="tzDropdown" class="dropdown-menu">
-            <a href="#">GMT+0</a><a href="#">GMT+1</a><a href="#">GMT+2</a><a href="#">GMT-5</a>
-          </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">🛠️ What I Fix</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>System & Boot</h3>
+                    <ul>
+                        <li><i class="fas fa-stop-circle"></i> Blue Screen / Black Screen</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Error 3F0 / Boot Failures</li>
+                        <li><i class="fas fa-windows"></i> Windows Installation / Reinstall</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security & Recovery</h3>
+                    <ul>
+                        <li><i class="fas fa-bug"></i> Virus & Malware Removal</li>
+                        <li><i class="fas fa-key"></i> Password Recovery / Reset</li>
+                        <li><i class="fas fa-trash-restore"></i> Data Recovery</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Optimization & Setup</h3>
+                    <ul>
+                        <li><i class="fas fa-microsoft"></i> Microsoft Office Setup</li>
+                        <li><i class="fas fa-rocket"></i> System Optimization & Cleanup</li>
+                        <li><i class="fas fa-desktop"></i> Remote Support Anywhere</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <a href="#" class="util-item coef-link"><i class="fas fa-chart-line"></i> COEF</a>
-        <a href="#" class="util-item about-link"><i class="fas fa-info-circle"></i> About us</a>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- MAIN HEADER / NAVIGATION (Sticky) -->
-  <header class="main-header">
-    <div class="container header-flex">
-      <div class="logo">
-        <h1>Forebet<span>Clone</span></h1>
-        <p class="tagline">Football is Mathematics</p>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#" data-tab="previews" class="nav-link active">Previews</a></li>
-          <li><a href="#" data-tab="trends" class="nav-link">Trends</a></li>
-          <li><a href="#" data-tab="top-trends" class="nav-link">Top Trends</a></li>
-          <li><a href="#" data-tab="livescore" class="nav-link">Livescore</a></li>
-          <li><a href="#" data-tab="injured" class="nav-link">Injured players</a></li>
-          <li><a href="#" data-tab="comparison" class="nav-link">Team Comparison</a></li>
-        </ul>
-      </nav>
-      <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-    </div>
-  </header>
-
-  <!-- HERO / TITLE SECTION -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <h2>Weekend | 1X2 Predictions</h2>
-        <div class="date-navigation">
-          <button id="prevDayBtn" class="date-nav-btn"><i class="fas fa-chevron-left"></i></button>
-          <span id="currentDateDisplay">Saturday, April 4, 2026</span>
-          <button id="nextDayBtn" class="date-nav-btn"><i class="fas fa-chevron-right"></i></button>
-          <div class="mini-calendar-toggle">
-            <button id="calendarToggleBtn"><i class="far fa-calendar-alt"></i> April 2026</button>
-          </div>
+    <!-- Special Offer Banner -->
+    <section id="offer" class="offer">
+        <div class="container">
+            <div class="offer-box">
+                <i class="fas fa-gem"></i>
+                <h2>🔥 5% OFF – First 5 Clients 🔥</h2>
+                <p>Mention this offer when you contact me. No fix, no fee.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CALENDAR DROPDOWN (hidden by default) -->
-  <div id="calendarPanel" class="calendar-panel">
-    <div class="container">
-      <div class="calendar-grid" id="dynamicCalendar"></div>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT WRAPPER (TABS) -->
-  <main class="content-wrapper">
-    <div class="container">
-      <!-- TAB CONTENT: PREVIEWS (predictions table) -->
-      <div id="previewsTab" class="tab-content active">
-        <div class="table-responsive">
-          <table class="predictions-table" id="matchesTable">
-            <thead>
-              <tr>
-                <th>Home team</th><th>Away team</th><th>Prob. %</th><th>1X2</th><th>Pred</th>
-                <th>Correct score</th><th>Avg. goals</th><th>Weather</th><th>Coef.</th><th>Score</th><th>Live</th><th>Coef.</th>
-              </tr>
-            </thead>
-            <tbody id="matchesTableBody">
-              <!-- dynamic JS fill -->
-            </tbody>
-          </table>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📞 Get in Touch</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call / WhatsApp</h3>
+                    <a href="tel:+255615368517" class="contact-link">+255 615 368 517</a>
+                    <button class="btn-copy" data-copy="+255615368517">Copy Number</button>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:c.c.solutions59@gmail.com" class="contact-link">c.c.solutions59@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp Fast</h3>
+                    <a href="https://wa.me/255615368517?text=Hi%2C%20I%20need%20help%20with%20my%20laptop" target="_blank" class="contact-link">Chat Now →</a>
+                </div>
+            </div>
+            <div class="guarantee">
+                <i class="fas fa-check-circle"></i> No Fix, No Fee • Free Quote • Serving Your City
+            </div>
         </div>
-        <div class="load-more-wrap">
-          <button id="loadMoreBtn" class="btn-outline"><i class="fas fa-plus-circle"></i> More matches</button>
-        </div>
-      </div>
+    </section>
 
-      <!-- OTHER TABS (dummy interactive content) -->
-      <div id="trendsTab" class="tab-content">
-        <div class="trends-grid" id="topTrendsList"></div>
-      </div>
-      <div id="topTrendsTab" class="tab-content">
-        <div class="trend-cards" id="fullTrendsContainer"></div>
-      </div>
-      <div id="livescoreTab" class="tab-content">
-        <div class="live-scores-placeholder"><i class="fas fa-futbol"></i> Live scores will appear here (demo mode).</div>
-      </div>
-      <div id="injuredTab" class="tab-content">
-        <div class="info-card"><i class="fas fa-ambulance"></i> Injured players data: simulated updates weekly.</div>
-      </div>
-      <div id="comparisonTab" class="tab-content">
-        <div class="info-card"><i class="fas fa-chart-simple"></i> Team comparison tool: select two clubs (demo).</div>
-      </div>
-    </div>
-  </main>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 C.C.SOLUTIONS – Fast, honest laptop repair</p>
+    </footer>
 
-  <!-- SIDEBAR / TOP TRENDS & FEATURED (Right side) -->
-  <aside class="sidebar-right">
-    <div class="container sidebar-grid">
-      <div class="trends-sidebar">
-        <h3><i class="fas fa-chart-line"></i> Top trends</h3>
-        <div id="sidebarTrendsList" class="trends-list"></div>
-      </div>
-      <div class="featured-match">
-        <h3><i class="fas fa-star"></i> Featured match</h3>
-        <div id="featuredMatchCard" class="featured-card"></div>
-      </div>
-    </div>
-  </aside>
-
- 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Forebet Clone — Football predictions & mathematical analysis. All data simulated for demo.</p>
-      <div class="footer-links">
-        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a><a href="#">Responsible Gambling</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- MATCH DETAIL MODAL -->
-  <div id="matchModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
