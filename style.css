@@ -431,16 +431,3 @@ footer {
   margin-top: 3px;
   flex-shrink: 0;
 }
-
-@media (max-width: 640px) {
-  .experience-card {
-    padding: 20px;
-  }
-  .exp-header {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .exp-title {
-    font-size: 1.2rem;
-  }
-}
